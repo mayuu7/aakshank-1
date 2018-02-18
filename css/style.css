@@ -722,6 +722,9 @@ footer p a:hover{
     #naach input{
         width: 100% !important;
     }
+    #toTop{
+        display: none !important;
+    }
 }
 @media(max-width:480px){
 	.w3ls-text img{
