@@ -59,8 +59,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- //animation --> 
 <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
+<!-- Start of Async Drift Code -->
+<script>
+	!function() {
+		var t;
+		if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+				t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+				t.factory = function(e) {
+					return function() {
+						var n;
+						return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+					};
+				}, t.methods.forEach(function(e) {
+			t[e] = t.factory(e);
+		}), t.load = function(t) {
+			var e, n, o, i;
+			e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+					o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+					n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+		});
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('kfr7khertd3t');
+</script>
+<!-- End of Async Drift Code -->
+<script>
+	drift.on('ready',function(api, payload) {
+		// interact with the api here
+		jQuery('.widget-container').css('right','10px');
+	})
+</script>
 </head>
 <body>
 	<div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:100;" class="loader"><br><br>
@@ -636,30 +666,7 @@ ga('send', 'pageview');
 </script>
 <!-- End Google Analytics -->
 		
-	<!-- Start of Async Drift Code -->
-<script>
-!function() {
-  var t;
-  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-  t.factory = function(e) {
-    return function() {
-      var n;
-      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-    };
-  }, t.methods.forEach(function(e) {
-    t[e] = t.factory(e);
-  }), t.load = function(t) {
-    var e, n, o, i;
-    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
-    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-  });
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('kfr7khertd3t');
-</script>
-<!-- End of Async Drift Code -->
+
 	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
